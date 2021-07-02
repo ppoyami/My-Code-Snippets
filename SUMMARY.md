@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [이 페이지는...](README.md)
 
 ## Javascript
 
@@ -14,17 +14,13 @@
   * [Map 활용하기](javascript/clean-code/map.md)
 * [함수형 프로그래밍](javascript/undefined.md)
 * [객체지향 프로그래밍](javascript/undefined-1.md)
+* [DOM](javascript/dom.md)
 
 ## Boilerplate
 
-* [React](boilerplate/react.md)
-* [Express](boilerplate/express.md)
-
-## React
-
-* [상태 관리 라이브러리](react/undefined/README.md)
-  * [Context API](react/undefined/context-api.md)
-  * [Redux](react/undefined/redux.md)
-
-## Node
+* [React](boilerplate/react/README.md)
+  * [useReducer + Context API](boilerplate/react/usereducer-+-context-api.md)
+  * [Redux](boilerplate/react/redux.md)
+* [Express](boilerplate/express/README.md)
+  * [Express 설정하기](boilerplate/express/express.md)
 
