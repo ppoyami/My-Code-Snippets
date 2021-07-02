@@ -30,3 +30,7 @@
   * [useInputs](react/custom-hook/useinputs.md)
 * [Third Party Library](react/third-party-library.md)
 
+## CSS
+
+* [Global CSS](css/global-css.md)
+
