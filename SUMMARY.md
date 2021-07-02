@@ -27,8 +27,6 @@
 
 ## Node
 
----
-
-* [Boilerplate](boilerplate/README.md)
-  * [Express 기본 설정](boilerplate/express.md)
+* [Boilerplate](node/boilerplate/README.md)
+  * [Express 기본 설정](node/boilerplate/express.md)
 
