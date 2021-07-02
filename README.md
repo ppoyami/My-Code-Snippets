@@ -1,6 +1,6 @@
 # Initial page
 
-```text
+```jsx
   const iterable = {
     [Symbol.iterator]() {
       let i = 3;
