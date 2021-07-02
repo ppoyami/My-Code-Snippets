@@ -15,18 +15,16 @@
 * [함수형 프로그래밍](javascript/undefined.md)
 * [객체지향 프로그래밍](javascript/undefined-1.md)
 
+## Boilerplate
+
+* [React](boilerplate/react.md)
+* [Express](boilerplate/express.md)
+
 ## React
 
-* [Boilerplate](react/boilerplate-1/README.md)
-  * [프로젝트 설계하기](react/boilerplate-1/undefined-1.md)
-  * [프로젝트 구성방법](react/boilerplate-1/undefined-2.md)
-  * [컴포넌트 코드 작성법](react/boilerplate-1/undefined.md)
 * [상태 관리 라이브러리](react/undefined/README.md)
   * [Context API](react/undefined/context-api.md)
   * [Redux](react/undefined/redux.md)
 
 ## Node
-
-* [Boilerplate](node/boilerplate/README.md)
-  * [Express 기본 설정](node/boilerplate/express.md)
 
