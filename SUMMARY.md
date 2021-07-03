@@ -13,6 +13,7 @@
   * [Map 활용하기](javascript/clean-code/map.md)
 * [함수형 프로그래밍](javascript/functional/README.md)
   * [이터러블 / 이터레이터 프로토콜](javascript/functional/undefined.md)
+  * [제너레이터](javascript/functional/undefined-1.md)
 * [객체지향 프로그래밍](javascript/oop.md)
 * [DOM](javascript/dom.md)
 
