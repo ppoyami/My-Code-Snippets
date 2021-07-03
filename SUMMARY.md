@@ -11,8 +11,9 @@
   * [Set 활용하기](javascript/clean-code/set.md)
   * [Object 활용하기](javascript/clean-code/object.md)
   * [Map 활용하기](javascript/clean-code/map.md)
-* [함수형 프로그래밍](javascript/undefined.md)
-* [객체지향 프로그래밍](javascript/undefined-1.md)
+* [함수형 프로그래밍](javascript/functional/README.md)
+  * [이터러블 / 이터레이터 프로토콜](javascript/functional/undefined.md)
+* [객체지향 프로그래밍](javascript/oop.md)
 * [DOM](javascript/dom.md)
 
 ## Boilerplate
@@ -36,7 +37,7 @@
 
 ## git
 
-* [Git 공식문서](git/git-1/README.md)
-  * [3.2 Git 브랜치 - 브랜치와 Merge 의 기초](git/git-1/3.2-git-merge.md)
-* [브랜치 관리하기](git/undefined.md)
+* [Git 공식문서](git/git-scm/README.md)
+  * [3.2 Git 브랜치 - 브랜치와 Merge 의 기초](git/git-scm/3.2-git-merge.md)
+* [브랜치 관리하기](git/branch.md)
 
