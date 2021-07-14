@@ -43,5 +43,9 @@ If you are sure you want to delete it, run 'git branch -D testing'.
 git branch -D testing // 강제 삭
 ```
 
+## 브랜치 병합 \(fast-forward\)
 
+```bash
+git merge issue1
+```
 
