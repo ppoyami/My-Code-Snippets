@@ -45,7 +45,9 @@ rl.on('line', function (line) {
 
 ```
 
-> 여러 줄 입력할 땐 아래와 같은 방법으로 해야한다.
+> 여러 줄 입력할 땐 아래와 같은 방법으로 해야한다. ctrl + D로 EOF 를 건다. 
+>
+> 입력 줄을 넘어가지 않게 LIMIT 클로저 변수를 추가하여 사용할 수도 있
 
 ```javascript
 const fs = require('fs');
@@ -54,6 +56,12 @@ const stdin = fs.readFileSync('/dev/stdin').toString().split('\n');
 const input = (() => {
   let line = 0;
   return () => stdin[line++];
+})();
+
+const input2 = (() => {
+  let line = 0;
+  let LIMIT = stdin.length - 1;
+  return () => (LIMIT > line ? stdin[line++] : undefined);
 })();
 
 const [v1, v2] = input().split(' ').map(Number);
