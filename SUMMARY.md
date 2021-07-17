@@ -16,7 +16,10 @@
   * [제너레이터](javascript/functional/undefined-1.md)
   * [map, filter, reduce](javascript/functional/map-filter-reduce.md)
   * [go, pipe, curry](javascript/functional/go-pipe-curry.md)
-* [객체지향 프로그래밍](javascript/oop.md)
+* [객체지향 프로그래밍](javascript/oop/README.md)
+  * [예제 코드](javascript/oop/undefined.md)
+* [타입스크립트](javascript/undefined/README.md)
+  * [예제 코드](javascript/undefined/undefined.md)
 * [DOM](javascript/dom.md)
 
 ## Boilerplate
@@ -41,7 +44,7 @@
 ## git
 
 * [Git 공식문서](git/git-scm/README.md)
-  * [3.2 Git 브랜치 - 브랜치와 Merge 의 기초](git/git-scm/3.2-git-merge.md)
+  * [3. Git 브랜치](git/git-scm/3.2-git-merge.md)
 * [브랜치 관리하기](git/branch.md)
 
 ## Algorithm
