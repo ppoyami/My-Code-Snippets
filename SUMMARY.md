@@ -4,6 +4,7 @@
 
 ## Javascript
 
+* [Core](javascript/core.md)
 * [클린코드](javascript/clean-code/README.md)
   * [펼침 연산자](javascript/clean-code/undefined.md)
   * [매개변수와 return 문을 정리하기](javascript/clean-code/return.md)
@@ -21,6 +22,7 @@
 * [타입스크립트](javascript/undefined/README.md)
   * [예제 코드](javascript/undefined/undefined.md)
   * [유틸리티 타입](javascript/undefined/undefined-1.md)
+  * [tsconfig](javascript/undefined/tsconfig.md)
 * [DOM](javascript/dom.md)
 
 ## Boilerplate
