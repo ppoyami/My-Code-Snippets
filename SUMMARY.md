@@ -23,7 +23,8 @@
   * [예제 코드](javascript/undefined/undefined.md)
   * [유틸리티 타입](javascript/undefined/undefined-1.md)
   * [tsconfig](javascript/undefined/tsconfig.md)
-* [DOM](javascript/dom.md)
+* [DOM](javascript/dom-1/README.md)
+  * [DOM 기본문법](javascript/dom-1/dom.md)
 
 ## Boilerplate
 
