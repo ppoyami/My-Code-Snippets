@@ -91,13 +91,12 @@ class User {
     private internalAge = 4;
 
     get age(): number {
-      return this.internalAge;
+      return this._age;
     }
     // M: setter 로 유효성 검사 후 값을 할당할 수 있다.
     set age(num: number) {
-      if (num < 0) {
-      }
-      this.internalAge = num;
+      if (num < 0) {}
+      this._age = num;
     }
     // M: 멤버변수 깔끔하게 할당하기
     constructor(private firstName: string, public lastName: string) {}
@@ -160,13 +159,11 @@ class User {
 
 ## 컴포지션
 
-상속의 문제점 -&gt; 컴포지션
+상속의 문제점을 컴포지션으로 해결한다.
 
-_1. 두 개 이상의 부모클래스를 가질 수 없다._ 
-
-2. 상속관계의 복잡성은 계속 증가한다.
-
- 3. 부모클래스의 코드 수정이 자식 클래스에 영향을 미칠 수 있다.\(사이드이펙트\)
+* 두 개 이상의 부모클래스를 가질 수 없다. 
+* 상속관계의 복잡성은 계속 증가한다.
+* 부모클래스의 코드 수정이 자식 클래스에 영향을 미칠 수 있다.\(사이드이펙트\)
 
 #### 클래스 간의 관계 피하고\(상속의 문제점 중 하나인 사이드이펙트가 때문\), 인터페이스로 통신하기
 
@@ -279,7 +276,7 @@ _1. 두 개 이상의 부모클래스를 가질 수 없다._
 
 ## abstract
 
-> 자식클래스에게 공통기능과 메서드 명세를 제공하기
+> 자식클래스에게 공통기능과 메서드 명세를 제공하기, abstract class는 인스턴스를 만드는 것이 불가능하
 
 ```typescript
 abstract class CoffeeMachine implements CoffeeMaker {

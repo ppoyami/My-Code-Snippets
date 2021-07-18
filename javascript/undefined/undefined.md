@@ -6,7 +6,7 @@ description: 타입스크립트 문법 예제
 
 ## 기본 타입
 
-#### undefined와 null
+### undefined와 null
 
 > _undefined -&gt; 값이 비었는 지, 아닌 지 모른다.\(아직 결정되지 않아서 자동으로 설정되는 값\)_ 
 >
@@ -20,15 +20,15 @@ description: 타입스크립트 문법 예제
   function find(): number | undefined {
     // * 찾았으면 숫자, 아니면..
     if (true) return 1;
-    return undefined;
+    return;
   }
   
   let person2: string | null; // * 있거나 없거나를 나타 낼때 사용
 ```
 
-#### void, never
+### void, never
 
-> never : 함수에서 절대 리턴되지 않음을 명시, void 는 생략가
+> never : 함수에서 절대 리턴되지 않음을 명시
 
 ```typescript
   function print(): void {
@@ -43,7 +43,7 @@ description: 타입스크립트 문법 예제
   }
 ```
 
-#### Optional, Default, Rest parameter
+### Optional, Default, Rest parameter
 
 ```typescript
   //lastName: string | undefined -> printName('Ellie', undefined);
@@ -64,7 +64,7 @@ description: 타입스크립트 문법 예제
   }
 ```
 
-#### union
+### union
 
 객체 타입을 공통 속성에 다른 값으로 정의하고 union 하면 조건 검사 시 가독성이 좋아진다.
 
@@ -101,7 +101,7 @@ description: 타입스크립트 문법 예제
   }
 ```
 
-#### 튜플 사용하기
+### 튜플 사용하기
 
 > 동적으로 값을 생성해서 다른 타입을 가진 배열로 반환하고, 사용 시 이름을 정해서 쓰고 싶다 -&gt; 튜플 
 >
@@ -117,7 +117,7 @@ description: 타입스크립트 문법 예제
   const [name, age] = student; // 구조분해 할당으로 가독성있게 접근하기
 ```
 
-#### Intersection Types
+### Intersection Types
 
 ```typescript
   type Student = {
@@ -142,7 +142,7 @@ description: 타입스크립트 문법 예제
   });
 ```
 
-#### 타입 체크를 무시하기 &lt;&gt;, as, !
+### 타입 체크를 무시하기 &lt;&gt;, as, !
 
 ```typescript
   const result = jsStrFunc(); // 바닐라 자바스크립트에서 문자열을 반환하는 것이 확신한다면.
@@ -163,7 +163,7 @@ description: 타입스크립트 문법 예제
 
 ## Generic
 
-#### function, class 에서의 제네릭
+### function, class 에서의 제네릭
 
 ```typescript
 function checkNotNull<T>(arg: T | null): T {
@@ -200,7 +200,7 @@ either.right(); //5
 const best = new SimpleEither({ name: 'ellie' }, 'hello');
 ```
 
-#### Gerneric constrain
+### Gerneric constrain
 
 > 세부적인 타입을 인자로 받아서 정말 추상적인 타입으로 다시 리턴하는 함수는 💩
 >
@@ -224,10 +224,10 @@ class PartTimeEmployee implements Employee {
   }
   workPartTime() {}
 }
-
+// 구현체는 모두 받을 수 있으나, 인터페이스 타입으로만 반
 function payBad(employee: Employee): Employee {
   employee.pay();
-  return employee;
+  return employee; // Employee 인터페이스의 명세대로만 사용할 수 있
 }
 
 function pay<T extends Employee>(employee: T): T {

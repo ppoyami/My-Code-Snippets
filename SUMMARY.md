@@ -4,7 +4,7 @@
 
 ## Javascript
 
-* [Core](javascript/core.md)
+* [코어 자바스크립트](javascript/core.md)
 * [클린코드](javascript/clean-code/README.md)
   * [펼침 연산자](javascript/clean-code/undefined.md)
   * [매개변수와 return 문을 정리하기](javascript/clean-code/return.md)
