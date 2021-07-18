@@ -20,6 +20,7 @@
   * [예제 코드](javascript/oop/undefined.md)
 * [타입스크립트](javascript/undefined/README.md)
   * [예제 코드](javascript/undefined/undefined.md)
+  * [유틸리티 타입](javascript/undefined/undefined-1.md)
 * [DOM](javascript/dom.md)
 
 ## Boilerplate
