@@ -125,6 +125,7 @@ const h1 = document.querySelector('h1');
 console.log(h1.querySelectorAll('.highlight'));
 console.log(h1.childNodes); // NodeList -> text, comment, span.highlight... 모든 것을 가져온다.(live up date가 안됨)
 console.log(h1.children); // HTMLCollection(3) span br span -> live update가 되는 자료구조이다.
+
 h1.firstElementChild.style.color = 'white'; // 첫 번째 요소를 지칭 -> span을 화이트로.
 h1.lastElementChild.style.color = 'black';
 
