@@ -39,81 +39,10 @@
 
       ```text
       {
-        "compilerOptions": {
-          "target": "es5",
-          "baseUrl": "src",
-          "lib": ["dom", "dom.iterable", "esnext"],
-          "allowJs": true,
-          "skipLibCheck": true,
-          "esModuleInterop": true,
-          "allowSyntheticDefaultImports": true,
-          "strict": true,
-          "forceConsistentCasingInFileNames": true,
-          "noFallthroughCasesInSwitch": true,
-          "module": "esnext",
-          "moduleResolution": "node",
-          "resolveJsonModule": true,
-          "isolatedModules": true,
-          "noEmit": true,
-          "jsx": "react-jsx",
-          "jsxImportSource": "@emotion/react"
-        },
-        "include": ["src"]
-      }
-      ```
-
-   6. typescript 관련 타입 라이브러리, eslint 설정
-
-      ```text
-      "dependencies": {
-          "@emotion/react": "^11.4.0",
-          "@testing-library/jest-dom": "^5.11.4",
-          "@testing-library/react": "^11.1.0",
-          "@testing-library/user-event": "^12.1.10",
-          "@types/jest": "^26.0.24",
-          "@types/node": "^16.4.3",
-          "@types/react": "^17.0.15",
-          "@types/react-dom": "^17.0.9",
-          "react": "^17.0.2",
-          "react-dom": "^17.0.2",
-          "react-scripts": "4.0.3",
-          "typescript": "^4.3.5",
-          "web-vitals": "^1.0.1"
-        },
-      "devDependencies": {
-          "@typescript-eslint/eslint-plugin": "^4.28.4",
-          "@typescript-eslint/parser": "^4.28.4",
-          "eslint": "^7.31.0",
-          "eslint-config-prettier": "^8.3.0",
-          "eslint-plugin-react": "^7.24.0",
-          "prettier": "^2.3.2"
+        "compileOptions" : {
+          // ...  생략
+          "jsxImportSource": "@emotion/react",
         }
-      ```
-
-      ```text
-      // .eslintrc
-      {
-        "env": {
-          "browser": true,
-          "es2021": true,
-          "node": true
-        },
-        "extends": [
-          "eslint:recommended",
-          "plugin:react/recommended",
-          "plugin:@typescript-eslint/recommended",
-          "prettier"
-        ],
-        "parser": "@typescript-eslint/parser",
-        "parserOptions": {
-          "ecmaFeatures": {
-            "jsx": true
-          },
-          "ecmaVersion": 12,
-          "sourceType": "module"
-        },
-        "plugins": ["react", "@typescript-eslint"],
-        "rules": {}
       }
       ```
 2. **JSX Pragma, css prop을 사용하는 파일마다 아래와 같은 코드를 삽입**
