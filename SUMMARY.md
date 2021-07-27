@@ -39,7 +39,10 @@
 * [Code Snippets](react/code-snippets.md)
 * [Custom Hook](react/custom-hook/README.md)
   * [useInputs](react/custom-hook/useinputs.md)
-* [Third Party Library](react/third-party-library.md)
+* [Styling](react/third-party-library/README.md)
+  * [styled-components](react/third-party-library/styled-components.md)
+  * [emotion](react/third-party-library/emotion.md)
+  * [css module](react/third-party-library/css-module.md)
 
 ## CSS
 
