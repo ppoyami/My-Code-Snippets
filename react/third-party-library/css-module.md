@@ -36,7 +36,7 @@ const CSSModule = () => {
 export default CSSModule;
 ```
 
-### classNames 라이브러리 사용하
+### classNames 라이브러리 사용하기 
 
 ```css
 .button {
