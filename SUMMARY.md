@@ -22,6 +22,7 @@
 * [타입스크립트](javascript/undefined/README.md)
   * [예제 코드](javascript/undefined/undefined.md)
   * [유틸리티 타입](javascript/undefined/undefined-1.md)
+  * [const Assertion](javascript/undefined/const-assertion.md)
   * [tsconfig](javascript/undefined/tsconfig.md)
 * [DOM](javascript/dom-1/README.md)
   * [DOM 기본문법](javascript/dom-1/dom.md)
