@@ -39,11 +39,15 @@
 * [Custom Hook](react/custom-hook/README.md)
   * [useInputs](react/custom-hook/useinputs.md)
 * [Code Snippets](react/code-snippets.md)
-* [Settings](react/settings.md)
+* [Settings](react/settings/README.md)
+  * [CRA + Typescript](react/settings/cra-+-typescript.md)
 * [Styling](react/third-party-library/README.md)
   * [styled-components](react/third-party-library/styled-components.md)
   * [emotion](react/third-party-library/emotion.md)
   * [css module](react/third-party-library/css-module.md)
+* [with Typescript](react/with-typescript/README.md)
+  * [React Types](react/with-typescript/react-types.md)
+  * [Redux Types](react/with-typescript/redux-types.md)
 
 ## CSS
 
