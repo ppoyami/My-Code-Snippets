@@ -1,5 +1,15 @@
 # Redux Types
 
+## settings
+
+@types/react-redux
+
+react-redux
+
+redux
+
+redux-thunk
+
 ## reducer state
 
 ```typescript
