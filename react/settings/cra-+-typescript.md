@@ -29,8 +29,8 @@ module.exports =  {
     parser:  '@typescript-eslint/parser', 
     extends:  [
         'plugin:@typescript-eslint/recommended', 
-        // 'prettier/@typescript-eslint', 
-        'plugin:prettier/recommended',  
+        'plugin:prettier/recommended',
+        'prettier'  
     ],
     parserOptions:  {
     ecmaVersion:  2018, 
@@ -68,7 +68,7 @@ npm i -D prettier eslint-config-prettier eslint-plugin-prettier
 [https://stackoverflow.com/questions/65675771/eslint-couldnt-find-the-config-prettier-typescript-eslint-after-relocating](https://stackoverflow.com/questions/65675771/eslint-couldnt-find-the-config-prettier-typescript-eslint-after-relocating)
 {% endhint %}
 
-.prettierrc.js
+### .prettierrc.js
 
 ```javascript
 module.exports =  {
