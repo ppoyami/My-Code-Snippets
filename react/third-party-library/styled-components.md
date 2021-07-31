@@ -159,3 +159,7 @@ render(
 );
 ```
 
+## With Typescript
+
+
+
