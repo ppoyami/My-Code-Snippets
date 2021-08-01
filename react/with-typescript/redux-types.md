@@ -97,10 +97,45 @@ export default reducers;
 
 // 각 리듀서들의 타입정보를 가지고 있는 root 리듀서의 모든 타입을 ReturnType<>화 한다.
 export type RootState = ReturnType<typeof reducers>;
-export type AppDispatch = typeof store.dispatch;
+
+```
+
+`@reduxjs/toolkit`
+
+```typescript
+import { configureStore } from '@reduxjs/toolkit'
+// ...
+
+const store = configureStore({
+  reducer: {
+    posts: postsReducer,
+    comments: commentsReducer,
+    users: usersReducer,
+  },
+})
+
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+export type AppDispatch = typeof store.dispatch
 ```
 
 ## Define Typed Hooks
+
+```typescript
+import { useDispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { actionCreators } from '../state';
+
+// A: actionCreator 전달을 깔끔하게 하기 위해 사용한다.
+export const useActions = () => {
+  const dispatch = useDispatch();
+
+  return bindActionCreators(actionCreators, dispatch);
+  // *  {searchRepositories: dispatch(searchRepositories)}
+};
+
+```
 
 ```typescript
 import { useSelector, TypedUseSelectorHook } from 'react-redux';
@@ -108,6 +143,8 @@ import { RootState } from '../state';
 // 미리 타입이 지정된 useSelector를 만든다.
 export const useTypedSelector: TypedUseSelectorHook<RootState> = useSelector;
 ```
+
+`@reduxjs/toolkit`
 
 ```typescript
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
